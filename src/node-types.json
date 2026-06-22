@@ -1,0 +1,2259 @@
+[
+  {
+    "type": "expression",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "array_index_expression",
+        "named": true
+      },
+      {
+        "type": "array_val",
+        "named": true
+      },
+      {
+        "type": "binary_expression",
+        "named": true
+      },
+      {
+        "type": "block",
+        "named": true
+      },
+      {
+        "type": "cast_value",
+        "named": true
+      },
+      {
+        "type": "concat_expression",
+        "named": true
+      },
+      {
+        "type": "concat_flat_expression",
+        "named": true
+      },
+      {
+        "type": "cycle_delay",
+        "named": true
+      },
+      {
+        "type": "debug_finish",
+        "named": true
+      },
+      {
+        "type": "debug_print",
+        "named": true
+      },
+      {
+        "type": "enum_val",
+        "named": true
+      },
+      {
+        "type": "field_access_expression",
+        "named": true
+      },
+      {
+        "type": "function_call",
+        "named": true
+      },
+      {
+        "type": "generate_parallel",
+        "named": true
+      },
+      {
+        "type": "generate_sequence",
+        "named": true
+      },
+      {
+        "type": "if_branch",
+        "named": true
+      },
+      {
+        "type": "join_expression",
+        "named": true
+      },
+      {
+        "type": "let_typed_val",
+        "named": true
+      },
+      {
+        "type": "let_val",
+        "named": true
+      },
+      {
+        "type": "match_expression",
+        "named": true
+      },
+      {
+        "type": "probe_endpoint",
+        "named": true
+      },
+      {
+        "type": "put_val",
+        "named": true
+      },
+      {
+        "type": "ready_endpoint",
+        "named": true
+      },
+      {
+        "type": "receive_packet",
+        "named": true
+      },
+      {
+        "type": "register_dereference",
+        "named": true
+      },
+      {
+        "type": "send_packet",
+        "named": true
+      },
+      {
+        "type": "set_register",
+        "named": true
+      },
+      {
+        "type": "struct_val",
+        "named": true
+      },
+      {
+        "type": "struct_val_with",
+        "named": true
+      },
+      {
+        "type": "sync_var",
+        "named": true
+      },
+      {
+        "type": "term",
+        "named": true
+      },
+      {
+        "type": "tuple",
+        "named": true
+      },
+      {
+        "type": "unary_expression",
+        "named": true
+      },
+      {
+        "type": "unit",
+        "named": true
+      },
+      {
+        "type": "wait_expression",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "args_spawn",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_index_concrete",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "array_dimm",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_dimm",
+          "named": true
+        },
+        {
+          "type": "int_maybe_param",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "array_index_concrete",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_index_concrete",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "array_index_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "index",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "array_val",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "binary_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cast_value",
+    "named": true,
+    "fields": {
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "data_type",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "channel_class_concrete",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "param_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "channel_class_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "message_def",
+          "named": true
+        },
+        {
+          "type": "param_def",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "channel_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_dimm",
+          "named": true
+        },
+        {
+          "type": "channel_class_concrete",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "channel_direction",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block_comment",
+          "named": true
+        },
+        {
+          "type": "line_comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "concat_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "concat_flat_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "constructor_spec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cycle_delay",
+    "named": true,
+    "fields": {
+      "delay_value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "data_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type_array_range",
+          "named": true
+        },
+        {
+          "type": "data_type_no_array",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "data_type_array_range",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "int_maybe_param",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "data_type_no_array",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "param_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "debug_print",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "else_branch",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enum_val",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "constructor_spec",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "field_access_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "field_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_call",
+    "named": true,
+    "fields": {
+      "argument": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "function": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "function_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "typed_arg",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "generate_parallel",
+    "named": true,
+    "fields": {
+      "end": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      },
+      "start": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      },
+      "stop": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      },
+      "variable": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "generate_sequence",
+    "named": true,
+    "fields": {
+      "end": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      },
+      "start": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      },
+      "stop": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      },
+      "variable": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "get_array_index_string",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "int_or_id",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "if_branch",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "else_branch",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "recv_pack",
+          "named": true
+        },
+        {
+          "type": "send_pack",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "import_directive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "index",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "int_maybe_param",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "int_or_id",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "join_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "let_typed_val",
+    "named": true,
+    "fields": {
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "data_type",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "variable": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "let_val",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "variable": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "lifetime_spec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "timestamp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lifetime_spec_chan_local",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "timestamp_chan_local",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "literal_val",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bit_literal",
+          "named": true
+        },
+        {
+          "type": "dec_literal",
+          "named": true
+        },
+        {
+          "type": "hex_literal",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "loop_thread",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "message_specifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lvalue",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "index",
+          "named": true
+        },
+        {
+          "type": "lvalue",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "match_arm",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "match_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "match_arm",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "message_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "message_direction",
+          "named": true
+        },
+        {
+          "type": "message_sync_mode_spec",
+          "named": true
+        },
+        {
+          "type": "recv_message_sync_mode_spec",
+          "named": true
+        },
+        {
+          "type": "sig_type_chan_local",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "message_direction",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "message_specifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "get_array_index_string",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "message_sync_mode_spec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "plus_minus",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "probe_endpoint",
+    "named": true,
+    "fields": {
+      "endpoint_message": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "message_specifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "proc_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "channel_def",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "loop_thread",
+          "named": true
+        },
+        {
+          "type": "message_specifier",
+          "named": true
+        },
+        {
+          "type": "param_def",
+          "named": true
+        },
+        {
+          "type": "proc_def_arg",
+          "named": true
+        },
+        {
+          "type": "recursive_thread",
+          "named": true
+        },
+        {
+          "type": "reg_def",
+          "named": true
+        },
+        {
+          "type": "shared_var_def",
+          "named": true
+        },
+        {
+          "type": "spawn_statement",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proc_def_arg",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_dimm",
+          "named": true
+        },
+        {
+          "type": "channel_class_concrete",
+          "named": true
+        },
+        {
+          "type": "channel_direction",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "put_val",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ready_endpoint",
+    "named": true,
+    "fields": {
+      "endpoint_message": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "message_specifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "receive_packet",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "recv_pack",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "record_field_constr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "recursive_thread",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "recv_message_sync_mode_spec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "message_sync_mode_spec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "recv_pack",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "message_specifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "reg_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "register_dereference",
+    "named": true,
+    "fields": {
+      "register": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "lvalue",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "send_pack",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "message_specifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "send_packet",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "send_pack",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "set_register",
+    "named": true,
+    "fields": {
+      "register": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "lvalue",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "shared_var_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "lifetime_spec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sig_type_chan_local",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "lifetime_spec_chan_local",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "channel_class_def",
+          "named": true
+        },
+        {
+          "type": "function_def",
+          "named": true
+        },
+        {
+          "type": "import_directive",
+          "named": true
+        },
+        {
+          "type": "macro_def",
+          "named": true
+        },
+        {
+          "type": "proc_def",
+          "named": true
+        },
+        {
+          "type": "type_def",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "spawn_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "args_spawn",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "param_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "spawn_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "spawn_def",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "struct_val",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "record_field_constr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "struct_val_with",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "record_field_constr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sync_var",
+    "named": true,
+    "fields": {
+      "variable": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "term",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "bit_literal",
+          "named": true
+        },
+        {
+          "type": "dec_literal",
+          "named": true
+        },
+        {
+          "type": "hex_literal",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "timestamp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "message_specifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "timestamp_chan_local",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "plus_minus",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tuple",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "field_def",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "param_def",
+          "named": true
+        },
+        {
+          "type": "variant_def",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typed_arg",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unary_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unit",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "variant_def",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "literal_val",
+          "named": true
+        },
+        {
+          "type": "variant_type_spec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variant_type_spec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "wait_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": "&",
+    "named": false
+  },
+  {
+    "type": "&&",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "--",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": ":=",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": "=>",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": ">>",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "assigned",
+    "named": false
+  },
+  {
+    "type": "bit_literal",
+    "named": true
+  },
+  {
+    "type": "block_comment",
+    "named": true
+  },
+  {
+    "type": "by",
+    "named": false
+  },
+  {
+    "type": "call",
+    "named": false
+  },
+  {
+    "type": "chan",
+    "named": false
+  },
+  {
+    "type": "const",
+    "named": false
+  },
+  {
+    "type": "cycle",
+    "named": false
+  },
+  {
+    "type": "debug_finish",
+    "named": true
+  },
+  {
+    "type": "dec_literal",
+    "named": true
+  },
+  {
+    "type": "dprint",
+    "named": false
+  },
+  {
+    "type": "dyn",
+    "named": false
+  },
+  {
+    "type": "else",
+    "named": false
+  },
+  {
+    "type": "enum",
+    "named": false
+  },
+  {
+    "type": "eternal",
+    "named": false
+  },
+  {
+    "type": "extern",
+    "named": false
+  },
+  {
+    "type": "flat",
+    "named": false
+  },
+  {
+    "type": "foreign",
+    "named": false
+  },
+  {
+    "type": "func",
+    "named": false
+  },
+  {
+    "type": "generate",
+    "named": false
+  },
+  {
+    "type": "generate_seq",
+    "named": false
+  },
+  {
+    "type": "hex_literal",
+    "named": true
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "import",
+    "named": false
+  },
+  {
+    "type": "in",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": false
+  },
+  {
+    "type": "int_literal",
+    "named": true
+  },
+  {
+    "type": "left",
+    "named": false
+  },
+  {
+    "type": "let",
+    "named": false
+  },
+  {
+    "type": "line_comment",
+    "named": true
+  },
+  {
+    "type": "logic",
+    "named": false
+  },
+  {
+    "type": "loop",
+    "named": false
+  },
+  {
+    "type": "match",
+    "named": false
+  },
+  {
+    "type": "probe",
+    "named": false
+  },
+  {
+    "type": "proc",
+    "named": false
+  },
+  {
+    "type": "put",
+    "named": false
+  },
+  {
+    "type": "ready",
+    "named": false
+  },
+  {
+    "type": "recurse",
+    "named": false
+  },
+  {
+    "type": "recursive",
+    "named": false
+  },
+  {
+    "type": "recv",
+    "named": false
+  },
+  {
+    "type": "reg",
+    "named": false
+  },
+  {
+    "type": "right",
+    "named": false
+  },
+  {
+    "type": "send",
+    "named": false
+  },
+  {
+    "type": "set",
+    "named": false
+  },
+  {
+    "type": "shared",
+    "named": false
+  },
+  {
+    "type": "shl",
+    "named": false
+  },
+  {
+    "type": "shr",
+    "named": false
+  },
+  {
+    "type": "spawn",
+    "named": false
+  },
+  {
+    "type": "string_literal",
+    "named": true
+  },
+  {
+    "type": "struct",
+    "named": false
+  },
+  {
+    "type": "sync",
+    "named": false
+  },
+  {
+    "type": "try",
+    "named": false
+  },
+  {
+    "type": "type",
+    "named": false
+  },
+  {
+    "type": "void",
+    "named": false
+  },
+  {
+    "type": "with",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "||",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]
